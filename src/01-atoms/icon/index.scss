@@ -1,0 +1,20 @@
+.a-ico {
+  width: 1em;
+  height: 1em;
+
+  line,
+  path,
+  polyline,
+  circle,
+  rect {
+    fill: none;
+    stroke-width: 2px;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &.a-ico--use-fill {
+    fill: currentColor;
+  }
+}

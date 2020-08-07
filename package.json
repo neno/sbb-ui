@@ -1,0 +1,43 @@
+{
+  "name": "sbb-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/html": "^5.3.19",
+    "@storybook/preset-scss": "^1.0.2",
+    "@svgr/webpack": "^5.4.0",
+    "@whitespace/storybook-addon-html": "^1.2.1",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "react-svg-loader": "^3.0.3",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "svg-url-loader": "^6.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.1"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -s ./static",
+    "build-storybook": "build-storybook",
+    "export:css": "sass ./src/main.scss ~/Dropbox/Projects/Intersim/carlo-bernasconi/styles/main.css",
+    "build": "webpack --config webpack.prod.js",
+    "build:unminified": "webpack --config webpack.unminified.js"
+  }
+}

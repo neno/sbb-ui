@@ -1,0 +1,30 @@
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function rem($value, $context: 16) {
+  @return ($value / $context) * 1rem;
+}
+
+@function em($value, $context: 16) {
+  @return ($value / $context) * 1em;
+}
+
+@function colWidth($cols, $total-cols: 12, $width: 100%, $grid-gutter: 30) {
+  $available-width: calc(
+    #{$width} - ((#{$total-cols} - 1) * #{rem($grid-gutter)})
+  );
+  $one-col: calc(#{$available-width}/#{$total-cols});
+  @return calc(#{$cols} * #{$one-col});
+}
+
+@function grid-col-width-ie($cols, $total-cols, $grid-gutter) {
+  @return calc((100% / #{$total-cols}) * #{$cols} - #{$grid-gutter});
+}

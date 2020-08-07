@@ -1,0 +1,13 @@
+.a-box {
+  padding: rem(20);
+  color: $color-primary-white;
+  background-color: $color-primary-blue;
+
+  &[aria-visible="false"] {
+    display: none;
+  }
+
+  &[aria-visible="true"] {
+    display: inherit;
+  }
+}
