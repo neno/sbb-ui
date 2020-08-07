@@ -1,6 +1,4 @@
-.a-btn {
-  @extend %button;
-
+.plf-button {
   border: 1px solid transparent;
   padding: rem(13) rem(50);
   cursor: pointer;
@@ -24,24 +22,24 @@
     pointer-events: none;
   }
 
-  &--primary {
-    background-color: $color-primary-blue;
-    border-color: $color-primary-blue;
-    color: $color-primary-white;
+  &.--primary {
+    background-color: $color-red;
+    border-color: $color-red;
+    color: $color-white;
     will-change: color, background-color, border-color;
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      transition: width $transition-time-default;
-      width: 0%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: $color-primary-orange;
-      will-change: background-color, width;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 0;
+    //   transition: width $transition-time-default;
+    //   width: 0%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   background-color: $color-primary-orange;
+    //   will-change: background-color, width;
+    // }
 
     @include hover {
       border-color: $color-primary-orange;
@@ -54,7 +52,7 @@
   }
 
   &--secondary {
-    border: 1px solid $color-primary-blue;
+    border: 1px solid $color-red;
     will-change: color, border-color;
 
     @include hover {

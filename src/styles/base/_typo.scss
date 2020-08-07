@@ -18,19 +18,12 @@ h4,
   @extend %h4;
 }
 
-body,
-p,
-ul,
-ol {
-  @extend %font-regular;
-}
-
 p,
 ul,
 ol {
   @extend %block-margin;
 }
 
-[class$='--small'] {
+[class$="--small"] {
   @extend %font-small;
 }

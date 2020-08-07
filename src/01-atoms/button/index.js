@@ -1,7 +1,7 @@
 import React from "react"
 
 const Button = ({ children, handleClick, classes = [], attr = {} }) => {
-  const cls = ["a-btn", ...classes]
+  const cls = ["plf-button", ...classes]
   return (
     <button
       type="button"

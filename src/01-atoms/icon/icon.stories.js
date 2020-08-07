@@ -8,3 +8,6 @@ export default {
 
 export const ChevronDown = () =>
   renderToStaticMarkup(<Icon name="chevron-down" />)
+
+export const ArrowUpCircle = () =>
+renderToStaticMarkup(<Icon name="arrow-up-circle" />)

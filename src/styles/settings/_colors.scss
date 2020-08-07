@@ -1,11 +1,16 @@
+$color-white: #ffffff;
+$color-gray: #767676;
+$color-red: #eb0000;
 $color-primary-blue: #243b47;
 $color-primary-orange: #c8652b;
 $color-primary-white: #ffffff;
-
 $color-secondary-gray: #d5d5d5;
 $color-secondary-gray-light: #f4f4f4;
 
 :export {
+  colorWhite: $color-white;
+  colorGray: $color-gray;
+  colorRed: $color-red;
   primaryColorBlue: $color-primary-blue;
   primaryColorWhite: $color-primary-white;
   primaryColorOrange: $color-primary-orange;

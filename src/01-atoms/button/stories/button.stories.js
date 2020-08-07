@@ -9,7 +9,7 @@ export default {
 
 export const ButtonPrimary = () =>
   renderToStaticMarkup(
-    <Button classes={["a-btn--primary"]}>
+    <Button classes={["--primary"]}>
       <span>Primary Button</span>
     </Button>
   )

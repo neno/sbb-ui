@@ -26,8 +26,9 @@ html {
 }
 
 body {
+  @extend %font-regular;
   color: $color-primary-blue;
-  background-color: $color-primary-white;
+  background-color: $color-white;
 }
 
 figure {

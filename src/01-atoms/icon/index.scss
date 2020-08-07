@@ -1,20 +1,17 @@
-.a-ico {
-  width: 1em;
+.plf-icon {
   height: 1em;
+  width: 1em;
 
-  line,
   path,
-  polyline,
-  circle,
-  rect {
-    fill: none;
-    stroke-width: 2px;
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  polyline {
+    fill: currentColor;
   }
 
-  &.a-ico--use-fill {
-    fill: currentColor;
+  &.-use-stroke {
+    path,
+    polyline {
+      fill: none;
+      stroke: currentColor;
+    }
   }
 }
