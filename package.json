@@ -34,7 +34,7 @@
     "webpack-merge": "^5.1.1"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./static",
+    "storybook": "STORYBOOK_TIMEOUT=2000 start-storybook -p 6006 -s ./static",
     "build-storybook": "build-storybook",
     "export:css": "sass ./src/main.scss ~/Dropbox/Projects/Intersim/carlo-bernasconi/styles/main.css",
     "build": "webpack --config webpack.prod.js",
