@@ -1,9 +1,10 @@
 import React from "react"
 
-const Input = ({attr = {}}) => {
+const Input = ({classes = [], attr = {}}) => {
+  const cls = ["a-input", ...classes]
   return (
     <input 
-      className="a-input" 
+      className={cls.join(" ")}
       type="text" 
       {...attr}
     />

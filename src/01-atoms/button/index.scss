@@ -25,7 +25,10 @@
 
   &--icon {
     padding: rem(11) rem(17);
-    font-size: rem(24);
+    > .a-icon {
+      width: rem(24);
+      height: rem(24);
+    }
   }
 
   // span {

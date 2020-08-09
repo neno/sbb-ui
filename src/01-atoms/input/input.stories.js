@@ -6,10 +6,34 @@ export default {
   title: "01-Atoms/Input"
 }
 
-export const Default = () =>
+export const InputDefault = () =>
+  renderToStaticMarkup(
+    <Input attr={{
+      "value": "Value"
+    }}/>
+  )
+
+  export const InputPlaceholder = () =>
   renderToStaticMarkup(
     <Input attr={{
       "placeholder": "Placeholder Text"
-    }}
+    }}/>
+  )
+
+export const InputDisabled = () =>
+  renderToStaticMarkup(
+    <Input attr={{
+      "value": "Value",
+      "disabled":true
+    }}/>
+  )
+
+export const InputError = () =>
+  renderToStaticMarkup(
+    <Input 
+      classes={["a-input--error"]}
+      attr={{
+        "value": "Value"
+      }}
     />
   )

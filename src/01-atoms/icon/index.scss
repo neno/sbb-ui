@@ -1,13 +1,10 @@
-.plf-icon {
-  height: 1em;
-  width: 1em;
-
+.a-icon {
   path,
   polyline {
     fill: currentColor;
   }
 
-  &.plf-icon--use-stroke {
+  &--use-stroke {
     path,
     polyline {
       fill: none;
