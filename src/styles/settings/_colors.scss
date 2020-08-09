@@ -1,6 +1,8 @@
 $color-white: #ffffff;
+$color-graphite: #b7b7b7;
 $color-gray: #767676;
 $color-red: #eb0000;
+$color-red-125: #c60018;
 $color-primary-blue: #243b47;
 $color-primary-orange: #c8652b;
 $color-primary-white: #ffffff;
@@ -10,7 +12,9 @@ $color-secondary-gray-light: #f4f4f4;
 :export {
   colorWhite: $color-white;
   colorGray: $color-gray;
+  colorGraphite: $color-graphite;
   colorRed: $color-red;
+  colorRed125: $color-red-125;
   primaryColorBlue: $color-primary-blue;
   primaryColorWhite: $color-primary-white;
   primaryColorOrange: $color-primary-orange;
