@@ -10,16 +10,21 @@ const SearchForm = ({ pages = [], currentPage }) => {
       <label class="sr-only" for="search">
         Suchbegriff
       </label>
-      <Input attr={{
-        "placeholder": "Placeholder Text",
-        "id": "search"
-      }}/>
-      <Button classes={["a-btn--primary a-btn--icon"]}>
-        <span className="sr-only">
-          Suche
-        </span>
-        <Icon name="magnifying-glass" />
-      </Button>
+      <Input
+        classes={["a-input--search"]}
+        attr={{
+          "placeholder": "Suchbegriff",
+          "id": "search"
+        }}
+      />
+      <div className="m-search-form__submit">
+        <Button classes={["a-btn--primary a-btn--icon a-btn--search"]}>
+          <span className="sr-only">
+            Suche
+          </span>
+          <Icon name="magnifying-glass" />
+        </Button>
+      </div>
     </form>
   );
 };

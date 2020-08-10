@@ -1,4 +1,9 @@
 .m-search-form {
-  display: flex;
-  border-radius: $search-form-border-radius;
+  position: relative;
+
+  &__submit {
+    position: absolute;
+    right: $input-border-width;
+    top: $input-border-width;
+  }
 }

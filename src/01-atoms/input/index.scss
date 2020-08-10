@@ -4,10 +4,28 @@
   border: $input-border-width solid $color-graphite;
   border-radius: $input-border-radius;
   color: $color-granite;
-  font-size: $input-font-size;
+  font-size: $font-size-regular;
   height: $input-height;
   line-height: $input-line-height;
-  padding: $input-padding-vertical rem(16);
+  padding: $input-padding-vertical 1.0667em;
+
+  @include media-breakpoint-up(xlarge) {
+    border-width: $input-border-width-xlarge;
+    border-radius: $input-border-radius-xlarge;
+    font-size: $font-size-regular-xlarge;
+    height: $input-height-xlarge;
+    line-height: $input-line-height-xlarge;
+    padding: $input-padding-vertical-xlarge 1.0667em;
+  }
+
+  @include media-breakpoint-up(xxlarge) {
+    border-width: $input-border-width-xxlarge;
+    border-radius: $input-border-radius-xxlarge;
+    font-size: $font-size-regular-xxlarge;
+    height: $input-height-xxlarge;
+    line-height: $input-line-height-xxlarge;
+    padding: $input-padding-vertical-xxlarge 1.0667em;
+  }
 
   &:focus {
     border-color: $color-granite;
@@ -26,5 +44,9 @@
   &--error {
     color: $color-red;
     border-color: $color-red;
+  }
+
+  &--search {
+    padding-right: $search-submit-min-width + rem(16);
   }
 }

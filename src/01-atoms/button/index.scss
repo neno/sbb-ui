@@ -7,10 +7,19 @@
   border-radius: $button-border-radius;
   color: $color-primary-blue;
   cursor: pointer;
-  min-width: rem(60);
+  min-width: $button-min-width;
   overflow: hidden;
-  padding: rem(10) rem(40);
+  padding: 0.6667em 2.6667em;
   will-change: color;
+
+  @include media-breakpoint-up(xlarge) {
+    border-width: $button-border-width-xlarge;
+    border-radius: $button-border-radius-xlarge;
+  }
+
+  @include media-breakpoint-up(xxlarge) {
+    border-radius: $button-border-radius-xxlarge;
+  }
 
   &--primary {
     background-color: $color-red;
@@ -31,5 +40,11 @@
       width: rem(24);
       height: rem(24);
     }
+  }
+
+  &--search {
+    border-radius: 0;
+    padding: (rem(11) - $input-border-width) (rem(17) - $input-border-width);
+    min-width: $search-submit-min-width;
   }
 }
