@@ -7,17 +7,15 @@ const Collapsible = createModule({
     const activeCls = options.triggerSelector.replace(".", "") + "--active"
 
     function showTarget() {
-      console.log("showTarget")
       trigger.setAttribute("aria-expanded", "true")
       trigger.classList.add(activeCls)
-      target.setAttribute("aria-visible", "true")
+      target.setAttribute("aria-hidden", "false")
     }
 
     function hideTarget() {
-      console.log("hideTarget")
       trigger.setAttribute("aria-expanded", "false")
       trigger.classList.remove(activeCls)
-      target.setAttribute("aria-visible", "false")
+      target.setAttribute("aria-hidden", "true")
     }
 
     function toggle() {

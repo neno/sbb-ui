@@ -13,21 +13,20 @@ const createModule = config => (el, options_ = {}) => {
   const moduleName = el.getAttribute("data-module")
 
   // Assign options passed as data-attribute: [data-${moduleName}-options]
-  let dataModuleOptions = {}
   if (el.dataset[`${moduleName}Options`]) {
-    dataModuleOptions = JSON.parse(el.dataset[`${moduleName}Options`])
-  }
-
-  // Assign options passed inside HTML by script tag (data-module-options)
-  const moduleOptionsContainer = el.querySelector(
-    `[data-${moduleName}-options]`
-  )
-  if (moduleOptionsContainer) {
-    moduleOptions = JSON.parse(moduleOptionsContainer.innerHTML)
+    moduleOptions = JSON.parse(el.dataset[`${moduleName}Options`])
+    // or alternatively assign options passed inside HTML by script tag (data-module-options)
+  } else {
+    const moduleOptionsContainer = el.querySelector(
+      `[data-${moduleName}-options]`
+    )
+    if (moduleOptionsContainer) {
+      moduleOptions = JSON.parse(moduleOptionsContainer.innerHTML)
+    }
   }
 
   // Overwrite default options with passed dataModuleOptions and given options_
-  Object.assign(options, dataModuleOptions, moduleOptions, options_)
+  Object.assign(options, moduleOptions, options_)
 
   return config.constructor({
     el,

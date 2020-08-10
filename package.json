@@ -36,8 +36,6 @@
   "scripts": {
     "storybook": "STORYBOOK_TIMEOUT=2000 start-storybook -p 6006 -s ./static",
     "build-storybook": "STORYBOOK_TIMEOUT=2000 build-storybook",
-    "export:css": "sass ./src/main.scss ~/Dropbox/Projects/Intersim/carlo-bernasconi/styles/main.css",
-    "build": "webpack --config webpack.prod.js",
-    "build:unminified": "webpack --config webpack.unminified.js"
+    "build": "webpack --config webpack.unminified.js"
   }
 }
