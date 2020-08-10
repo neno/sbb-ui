@@ -15,6 +15,6 @@ export const CollapsibleTriggerTarget = () =>
       <Button classes={["a-btn--primary"]}>
         <span>Show/Hide</span>
       </Button>
-      <Box attr={{ "aria-visible": "false" }}>{boxData}</Box>
+      <Box attr={{ "aria-hidden": "true" }}>{boxData}</Box>
     </Collapsible>
   )
