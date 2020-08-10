@@ -23,7 +23,7 @@ export const ButtonSecondary = () =>
 
 export const ButtonPrimaryIcon = () =>
   renderToStaticMarkup(
-    <Button classes={["a-btn--primary a-btn--icon"]}>
+    <Button classes={["a-btn--primary a-btn--search"]}>
       <span className="sr-only">
         Hidden text
       </span>

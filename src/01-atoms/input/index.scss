@@ -9,24 +9,6 @@
   line-height: $input-line-height;
   padding: $input-padding-vertical 1.0667em;
 
-  @include media-breakpoint-up(xlarge) {
-    border-width: $input-border-width-xlarge;
-    border-radius: $input-border-radius-xlarge;
-    font-size: $font-size-regular-xlarge;
-    height: $input-height-xlarge;
-    line-height: $input-line-height-xlarge;
-    padding: $input-padding-vertical-xlarge 1.0667em;
-  }
-
-  @include media-breakpoint-up(xxlarge) {
-    border-width: $input-border-width-xxlarge;
-    border-radius: $input-border-radius-xxlarge;
-    font-size: $font-size-regular-xxlarge;
-    height: $input-height-xxlarge;
-    line-height: $input-line-height-xxlarge;
-    padding: $input-padding-vertical-xxlarge 1.0667em;
-  }
-
   &:focus {
     border-color: $color-granite;
   }
@@ -47,6 +29,32 @@
   }
 
   &--search {
-    padding-right: $search-submit-min-width + rem(16);
+    padding-right: calc(#{$search-submit-min-width} + 1.0667em);
+  }
+
+  @include media-breakpoint-up(xlarge) {
+    border-width: $input-border-width-xlarge;
+    border-radius: $input-border-radius-xlarge;
+    font-size: $font-size-regular-xlarge;
+    height: $input-height-xlarge;
+    line-height: $input-line-height-xlarge;
+    padding: $input-padding-vertical-xlarge 1.0667em;
+
+    &--search {
+      padding-right: calc(#{$search-submit-min-width-xlarge} + 1.0667em);
+    }
+  }
+
+  @include media-breakpoint-up(xxlarge) {
+    border-width: $input-border-width-xxlarge;
+    border-radius: $input-border-radius-xxlarge;
+    font-size: $font-size-regular-xxlarge;
+    height: $input-height-xxlarge;
+    line-height: $input-line-height-xxlarge;
+    padding: $input-padding-vertical-xxlarge 1.0667em;
+
+    &--search {
+      padding-right: calc(#{$search-submit-min-width-xxlarge} + 1.0667em);
+    }
   }
 }

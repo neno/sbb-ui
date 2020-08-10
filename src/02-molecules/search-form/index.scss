@@ -5,5 +5,21 @@
     position: absolute;
     right: $input-border-width;
     top: $input-border-width;
+    height: $input-height - $input-border-width * 2;
+    width: $search-submit-min-width;
+
+    @include media-breakpoint-up(xlarge) {
+      right: $input-border-width-xlarge;
+      top: $input-border-width-xlarge;
+      height: $input-height-xlarge - $input-border-width-xlarge * 2;
+      width: $search-submit-min-width-xlarge;
+    }
+
+    @include media-breakpoint-up(xxlarge) {
+      right: $input-border-width-xxlarge;
+      top: $input-border-width-xxlarge;
+      height: $input-height-xxlarge - $input-border-width-xxlarge * 2;
+      width: $search-submit-min-width-xxlarge;
+    }
   }
 }

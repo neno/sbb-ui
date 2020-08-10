@@ -12,10 +12,9 @@
   padding: 0.6667em 2.6667em;
   will-change: color;
 
-  @include media-breakpoint-up(xlarge) {
-    border-width: $button-border-width-xlarge;
-    border-radius: $button-border-radius-xlarge;
-  }
+  border-width: $button-border-width-xlarge;
+  border-radius: $button-border-radius-xlarge;
+  font-size: $font-size-regular-xlarge;
 
   @include media-breakpoint-up(xxlarge) {
     border-radius: $button-border-radius-xxlarge;
@@ -33,18 +32,31 @@
     }
   }
 
-  &--icon {
-    padding: rem(11) rem(17);
+  &--search {
+    @extend .a-btn--primary;
+    justify-content: center;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
 
     > .a-icon {
       width: rem(24);
       height: rem(24);
     }
-  }
 
-  &--search {
-    border-radius: 0;
-    padding: (rem(11) - $input-border-width) (rem(17) - $input-border-width);
-    min-width: $search-submit-min-width;
+    @include media-breakpoint-up(xlarge) {
+      > .a-icon {
+        width: rem(36);
+        height: rem(36);
+      }
+    }
+
+    @include media-breakpoint-up(xlarge) {
+      > .a-icon {
+        width: rem(48);
+        height: rem(48);
+      }
+    }
   }
 }
