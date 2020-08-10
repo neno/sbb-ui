@@ -2,11 +2,14 @@ import "../styles/index.scss"
 import Collapsible from "./libs/Collapsible"
 
 const timeout = process.env.STORYBOOK_TIMEOUT || 0
-console.log("My timeout", timeout)
+
+/**
+ * IMPORTANT: in storybook this will not work with HMR (hot module replacement)
+ * You need to reload the page and wait for the timeout
+ */
 
 setTimeout(() => {
-  const el = document.querySelector("[data-module='collapsible']")
-  if (el) {
+  document.querySelectorAll("[data-module='collapsible']").forEach(el => {
     new Collapsible(el)
-  }
+  })
 }, timeout)
