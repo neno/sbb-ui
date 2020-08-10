@@ -1,14 +1,28 @@
+$color-red: #eb0000;
+$color-red-125: #c60018;
+$color-white: #ffffff;
+$color-milk: #f6f6f6;
+$color-aluminum: #d2d2d2;
+$color-graphite: #b7b7b7;
+$color-storm: #a8a8a8;
+$color-metal: #767676;
+$color-granite: #686868;
+$color-black: #000000;
 $color-primary-blue: #243b47;
 $color-primary-orange: #c8652b;
 $color-primary-white: #ffffff;
-
 $color-secondary-gray: #d5d5d5;
-$color-secondary-gray-light: #f4f4f4;
 
 :export {
+  colorRed: $color-red;
+  colorRed125: $color-red-125;
+  colorWhite: $color-white;
+  colorAluminum: $color-aluminum;
+  colorGraphite: $color-graphite;
+  colorMetal: $color-metal;
+  colorGranite: $color-granite;
   primaryColorBlue: $color-primary-blue;
   primaryColorWhite: $color-primary-white;
   primaryColorOrange: $color-primary-orange;
   secondaryColorGray: $color-secondary-gray;
-  secondaryColorGrayLight: $color-secondary-gray-light;
 }

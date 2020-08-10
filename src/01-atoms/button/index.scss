@@ -1,91 +1,107 @@
 .a-btn {
-  @extend %button;
-
-  border: 1px solid transparent;
-  padding: rem(13) rem(50);
-  cursor: pointer;
-  transition: transform;
-  position: relative;
-  overflow: hidden;
-  color: $color-primary-blue;
+  @extend %font-regular;
+  display: flex;
+  align-items: center;
   background-color: $color-primary-white;
+  border: 1px solid transparent;
+  color: $color-primary-blue;
+  cursor: pointer;
+  min-width: rem(60);
+  overflow: hidden;
+  padding: rem(10) rem(40);
   will-change: color;
 
-  @include hover {
-    color: $color-primary-orange;
-  }
-
-  span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-    pointer-events: none;
-  }
-
   &--primary {
-    background-color: $color-primary-blue;
-    border-color: $color-primary-blue;
-    color: $color-primary-white;
-    will-change: color, background-color, border-color;
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      transition: width $transition-time-default;
-      width: 0%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: $color-primary-orange;
-      will-change: background-color, width;
-    }
+    background-color: $color-red;
+    border-color: $color-red;
+    color: $color-white;
+    will-change: background-color, border-color;
 
     @include hover {
-      border-color: $color-primary-orange;
-      color: $color-primary-white;
-
-      &::after {
-        width: 100%;
-      }
+      background-color: $color-red-125;
+      border-color: $color-red-125;
     }
   }
 
-  &--secondary {
-    border: 1px solid $color-primary-blue;
-    will-change: color, border-color;
-
-    @include hover {
-      border-color: $color-primary-orange;
-    }
-  }
-
-  &--lang,
   &--icon {
-    padding: 0;
-  }
-
-  &--lang {
-    border-top: 1px solid $color-primary-blue;
-    border-bottom: 1px solid $color-primary-blue;
-    width: 100%;
-    text-align: left;
-    font-size: $font-size-regular;
-    white-space: nowrap;
-    line-height: 1.5;
-
-    @include media-breakpoint-up(large) {
-      border: 0;
-      padding: 0;
-      width: auto;
+    padding: rem(11) rem(17);
+    > .a-icon {
+      width: rem(24);
+      height: rem(24);
     }
   }
 
-  &--menu {
-    @include media-breakpoint-up(large) {
-      display: none;
-    }
-  }
+  // span {
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   z-index: 1;
+  //   position: relative;
+  //   pointer-events: none;
+  // }
+
+  // &.--primary {
+  //   background-color: $color-red;
+  //   border-color: $color-red;
+  //   color: $color-white;
+  //   will-change: color, background-color, border-color;
+
+  //   // &::after {
+  //   //   content: "";
+  //   //   position: absolute;
+  //   //   z-index: 0;
+  //   //   transition: width $transition-time-default;
+  //   //   width: 0%;
+  //   //   height: 100%;
+  //   //   top: 0;
+  //   //   left: 0;
+  //   //   background-color: $color-primary-orange;
+  //   //   will-change: background-color, width;
+  //   // }
+
+  //   @include hover {
+  //     border-color: $color-primary-orange;
+  //     color: $color-primary-white;
+
+  //     &::after {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
+
+  // &--secondary {
+  //   border: 1px solid $color-red;
+  //   will-change: color, border-color;
+
+  //   @include hover {
+  //     border-color: $color-primary-orange;
+  //   }
+  // }
+
+  // &--lang,
+  // &--icon {
+  //   padding: 0;
+  // }
+
+  // &--lang {
+  //   border-top: 1px solid $color-primary-blue;
+  //   border-bottom: 1px solid $color-primary-blue;
+  //   width: 100%;
+  //   text-align: left;
+  //   font-size: $font-size-regular;
+  //   white-space: nowrap;
+  //   line-height: 1.5;
+
+  //   @include media-breakpoint-up(large) {
+  //     border: 0;
+  //     padding: 0;
+  //     width: auto;
+  //   }
+  // }
+
+  // &--menu {
+  //   @include media-breakpoint-up(large) {
+  //     display: none;
+  //   }
+  // }
 }

@@ -21,9 +21,12 @@ export const ButtonSecondary = () =>
     </Button>
   )
 
-export const ButtonIcon = () =>
+export const ButtonPrimaryIcon = () =>
   renderToStaticMarkup(
-    <Button classes={["a-btn--icon"]}>
-      <Icon name="chevron-down" />
+    <Button classes={["a-btn--primary a-btn--icon"]}>
+      <span className="sr-only">
+        Suche
+      </span>
+      <Icon name="magnifying-glass" />
     </Button>
   )

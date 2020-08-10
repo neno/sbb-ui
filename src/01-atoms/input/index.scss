@@ -1,0 +1,29 @@
+.a-input {
+  background-color: $color-white;
+  border: $input-border-width solid $color-graphite;
+  border-radius: rem(2);
+  color: $color-granite;
+  font-size: $input-font-size;
+  height: $input-height;
+  line-height: $input-line-height;
+  padding: $input-border-padding-vertical rem(16);
+
+  &:focus {
+    border-color: $color-granite;
+  }
+
+  @include placeholder {
+    color: $color-storm;
+  }
+
+  &--disabled,
+  &:disabled {
+    background-color: $color-milk;
+    border-color: $color-aluminum;
+  }
+
+  &--error {
+    color: $color-red;
+    border-color: $color-red;
+  }
+}
