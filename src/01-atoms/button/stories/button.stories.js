@@ -25,7 +25,7 @@ export const ButtonPrimaryIcon = () =>
   renderToStaticMarkup(
     <Button classes={["a-btn--primary a-btn--icon"]}>
       <span className="sr-only">
-        Suche
+        Hidden text
       </span>
       <Icon name="magnifying-glass" />
     </Button>
