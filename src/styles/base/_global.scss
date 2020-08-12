@@ -27,6 +27,7 @@ html {
 
 body {
   @extend %font-regular;
+  font-family: $font-primary;
   color: $color-black;
   background-color: $color-white;
 }
@@ -36,12 +37,12 @@ figure {
 }
 
 ::placeholder {
-  color: $color-primary-blue;
+  color: $color-storm;
 }
 
 ::selection {
-  color: $color-primary-white;
-  background-color: $color-primary-blue;
+  color: $color-white;
+  background-color: $color-red;
 }
 
 abbr {

@@ -1,7 +1,7 @@
 .a-box {
   padding: rem(20);
-  color: $color-primary-white;
-  background-color: $color-primary-blue;
+  color: $color-white;
+  background-color: $color-red;
 
   &[aria-visible="false"] {
     display: none;
