@@ -1,3 +1,10 @@
+$button-border-width: rem(1);
+$button-border-radius: rem(2);
+$button-min-width: rem(60);
+$button-border-width-xlarge: rem(2);
+$button-border-radius-xlarge: rem(3);
+$button-border-radius-xxlarge: rem(4);
+
 .a-btn {
   @extend %font-regular;
   display: flex;

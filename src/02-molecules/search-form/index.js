@@ -7,14 +7,14 @@ import Button from '../../01-atoms/button'
 const SearchForm = ({ pages = [], currentPage }) => {
   return (
     <form className='m-search-form'>
-      <label class="sr-only" for="search">
+      <label class="sr-only" for="search-term">
         Suchbegriff
       </label>
       <Input
         classes={["a-input--search"]}
         attr={{
           "placeholder": "Suchbegriff",
-          "id": "search"
+          "id": "search-term"
         }}
       />
       <div className="m-search-form__submit">

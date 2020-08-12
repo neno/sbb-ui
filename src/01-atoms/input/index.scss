@@ -1,3 +1,30 @@
+$input-line-height: 1.6;
+$input-border-width: rem(2);
+$input-border-radius: rem(2);
+$input-padding-vertical: rem(10);
+$input-height: (($input-border-width + $input-padding-vertical) * 2) +
+  ($font-size-regular * $input-line-height);
+
+$input-line-height-xlarge: 1.5652;
+$input-border-width-xlarge: rem(3);
+$input-border-radius-xlarge: rem(3);
+$input-padding-vertical-xlarge: rem(15);
+$input-height-xlarge: (
+    ($input-border-width-xlarge + $input-padding-vertical-xlarge) * 2
+  ) + ($font-size-regular-xlarge * $input-line-height-xlarge);
+
+$input-line-height-xxlarge: 1.6;
+$input-border-width-xxlarge: rem(4);
+$input-border-radius-xxlarge: rem(4);
+$input-padding-vertical-xxlarge: rem(20);
+$input-height-xxlarge: (
+    ($input-border-width-xxlarge + $input-padding-vertical-xxlarge) * 2
+  ) + ($font-size-regular-xxlarge * $input-line-height-xxlarge);
+
+$search-submit-min-width: rem(54);
+$search-submit-min-width-xlarge: rem(84);
+$search-submit-min-width-xxlarge: rem(112);
+
 .a-input {
   width: 100%;
   background-color: $color-white;
