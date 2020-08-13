@@ -19,9 +19,11 @@ $button-border-radius-xxlarge: rem(4);
   padding: 0.6667em 2.6667em;
   will-change: background-color, border-color;
 
-  border-width: $button-border-width-xlarge;
-  border-radius: $button-border-radius-xlarge;
-  font-size: $font-size-regular-xlarge;
+  @include media-breakpoint-up(xlarge) {
+    border-width: $button-border-width-xlarge;
+    border-radius: $button-border-radius-xlarge;
+    font-size: $font-size-regular-xlarge;
+  }
 
   @include media-breakpoint-up(xxlarge) {
     border-radius: $button-border-radius-xxlarge;

@@ -1,4 +1,7 @@
 .a-icon {
+  width: rem(24);
+  height: rem(24);
+
   path,
   polyline {
     fill: currentColor;
@@ -10,5 +13,19 @@
       fill: none;
       stroke: currentColor;
     }
+  }
+
+  &--meta-link {
+    margin-right: em(4, 14);
+  }
+
+  @include media-breakpoint-up(xlarge) {
+    width: rem(36);
+    height: rem(36);
+  }
+
+  @include media-breakpoint-up(xxlarge) {
+    width: rem(48);
+    height: rem(48);
   }
 }

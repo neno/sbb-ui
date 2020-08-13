@@ -12,5 +12,8 @@ renderToStaticMarkup(<Icon name="arrow-up-circle" />)
 export const ChevronDown = () =>
   renderToStaticMarkup(<Icon name="chevron-down" />)
 
+  export const Globe = () =>
+  renderToStaticMarkup(<Icon name="globe" />)
+
 export const MagnifyingGlass = () =>
   renderToStaticMarkup(<Icon name="magnifying-glass" />)
