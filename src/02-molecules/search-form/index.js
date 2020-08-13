@@ -7,7 +7,7 @@ import Button from '../../01-atoms/button'
 const SearchForm = ({ pages = [], currentPage }) => {
   return (
     <form className='m-search-form'>
-      <label class="sr-only" for="search-term">
+      <label className="sr-only" htmlFor="search-term">
         Suchbegriff
       </label>
       <Input

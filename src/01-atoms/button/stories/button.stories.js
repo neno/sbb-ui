@@ -30,3 +30,14 @@ export const ButtonPrimaryIcon = () =>
       <Icon name="magnifying-glass" />
     </Button>
   )
+
+  export const ButtonLanguageSelector = () =>
+  renderToStaticMarkup(
+    <Button classes={["a-btn-language"]}>
+      <Icon name="chevron-down" />
+      <span className="sr-only">
+        Hidden text
+      </span>
+      <Icon name="magnifying-glass" />
+    </Button>
+  )
