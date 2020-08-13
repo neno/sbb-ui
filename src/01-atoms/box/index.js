@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react"
 
 const Box = ({ children, classes = [], attr = {} }) => (
   <div className={`a-box ${classes.join(" ")}`} {...attr}>
-    {children}
+    <p className="font-primary">{children}</p>
+    <p className="font-secondary">{children}</p>
   </div>
 )
 

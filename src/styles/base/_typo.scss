@@ -27,3 +27,12 @@ ol {
 // [class$="--small"] {
 //   @extend %font-small;
 // }
+
+
+p.font-primary {
+  font-family: $font-primary;
+}
+
+p.font-secondary {
+  font-family: $font-secondary;
+}
