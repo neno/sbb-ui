@@ -34,7 +34,7 @@
     "webpack-merge": "^5.1.1"
   },
   "scripts": {
-    "storybook": "STORYBOOK_TIMEOUT=2000 start-storybook -p 6006 -s ./static",
+    "storybook": "STORYBOOK_TIMEOUT=2000 start-storybook -p 6006 -s ./src",
     "build-storybook": "STORYBOOK_TIMEOUT=2000 build-storybook",
     "build": "webpack --config webpack.unminified.js"
   }
