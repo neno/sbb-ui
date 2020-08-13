@@ -24,9 +24,9 @@ export const MetaLinkWithIcon = () =>
 
 export const MetaLinkLanguageSelector = () =>
   renderToStaticMarkup(
-    <MetaLinkButton>
+    <MetaLink>
       <Icon name="globe" />
         Deutsch
       <Icon name="chevron-down" />
-    </MetaLinkButton>
+    </MetaLink>
   )
