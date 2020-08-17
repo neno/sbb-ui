@@ -1,0 +1,48 @@
+$language-selector-border-width: 0.125rem;
+$language-selector-border-radius: 0.125rem;
+$language-selector-icon-size: 1.5rem;
+$language-selector-icon-first-margin-right: 0.125rem;
+$language-selector-side-padding: 1rem - $language-selector-border-width;
+$language-selector-button-left-padding: $language-selector-icon-size +
+  $language-selector-side-padding + $language-selector-icon-first-margin-right;
+$language-selector-button-right-padding: $language-selector-icon-size +
+  $language-selector-side-padding - 0.4375rem;
+
+@import "./button/index";
+@import "./list/index";
+// @import "select/select";
+
+.plf-header-center-col .plf-language-selector {
+  margin-top: 0.4375rem;
+}
+
+.m-language-selector {
+  display: inline-block;
+  position: relative;
+
+  &--expanded {
+    .m-language-selector__list {
+      display: block;
+    }
+
+    .m-language-selector__btn {
+      border-color: $color-anthracite;
+    }
+  }
+}
+
+.m-language-selector__item {
+  color: $color-anthracite;
+  display: block;
+  font-size: 0.9375rem !important;
+  line-height: (23 / 15) !important;
+  margin: 0;
+  padding: 0.3125rem $language-selector-side-padding;
+
+  &:not(.-selected) {
+    &:hover,
+    &:focus {
+      color: $color-red;
+    }
+  }
+}

@@ -11,10 +11,6 @@
     color: $color-red-125;
   }
 
-  > .a-icon {
-    margin-right: em(4, 14);
-  }
-
   @include media-breakpoint-up(xlarge) {
     font-size: rem(21);
   }

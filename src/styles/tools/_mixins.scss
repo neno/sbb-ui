@@ -26,6 +26,10 @@
   }
 }
 
+%no-bullets {
+  @include no-bullets();
+}
+
 @mixin inline-list {
   @include no-bullets();
 

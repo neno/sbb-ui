@@ -22,11 +22,3 @@ export const MetaLinkWithIcon = () =>
     </MetaLink>
   )
 
-export const MetaLinkLanguageSelector = () =>
-  renderToStaticMarkup(
-    <MetaLink>
-      <Icon name="globe" />
-        Deutsch
-      <Icon name="chevron-down" />
-    </MetaLink>
-  )

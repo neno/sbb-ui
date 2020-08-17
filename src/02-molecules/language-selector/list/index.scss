@@ -1,0 +1,16 @@
+.m-language-selector__list {
+  @extend %no-bullets;
+  background-color: $color-white;
+  border: $language-selector-border-width solid $color-anthracite;
+  border-radius: $language-selector-border-radius;
+  border-top: 0;
+  box-shadow: 0 0.5rem 0 0 rgba($color-black, 0.15),
+    0 -0.1875rem 0 -#{$language-selector-border-width} $color-cloud;
+  display: none;
+  left: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 0.875rem;
+  position: absolute;
+  right: 0;
+  top: calc(100% - #{$language-selector-border-width / 2});
+}

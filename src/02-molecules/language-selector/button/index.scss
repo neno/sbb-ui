@@ -1,0 +1,24 @@
+.m-language-selector__btn {
+  background-color: transparent;
+  border: $language-selector-border-width solid transparent;
+  border-radius: $language-selector-border-radius
+    $language-selector-border-radius 0 0;
+  color: $color-metal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  height: 3rem;
+  line-height: (44 / 14);
+  padding: 0 rem(10);
+
+  > .a-icon {
+    margin-right: em(4, 14);
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    color: $color-red;
+  }
+}
