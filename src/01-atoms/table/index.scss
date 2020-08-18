@@ -1,3 +1,8 @@
+.a-table__container {
+  width: 100%;
+  overflow: auto;
+}
+
 .a-table {
   border: rem(1) solid $color-cloud;
   border-spacing: 0;
@@ -6,10 +11,33 @@
 
   &__thead {
     background-color: $color-cloud;
+
+    > .a-table__th {
+      &:first-child {
+        border-left: $color-cloud solid 1.0667em;
+      }
+
+      &:last-child {
+        border-right: $color-cloud solid 1.0667em;
+      }
+    }
   }
 
   // &__th {
   // }
+
+  &__tbody {
+    .a-table__td,
+    .a-table__th {
+      &:first-child {
+        border-left: $color-white solid 1.0667em;
+      }
+
+      &:last-child {
+        border-right: $color-white solid 1.0667em;
+      }
+    }
+  }
 
   &__tbody-tr {
     &:nth-child(even) {
@@ -22,35 +50,11 @@
     padding: 1.2em 0.8em 1.2667em;
   }
 
-  &--align-center {
-    text-align: center;
-  }
-
   @include media-breakpoint-up(medium) {
     &__td,
     &__th {
       padding-left: 1.0667em;
       padding-right: 1.0667em;
-    }
-
-    &__th {
-      &:first-child {
-        border-left: $color-cloud solid 1.0667em;
-      }
-
-      &:last-child {
-        border-right: $color-cloud solid 1.0667em;
-      }
-    }
-
-    &__td {
-      &:first-child {
-        border-left: $color-white solid 1.0667em;
-      }
-
-      &:last-child {
-        border-right: $color-white solid 1.0667em;
-      }
     }
   }
 

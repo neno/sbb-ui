@@ -1,11 +1,29 @@
 import React from "react"
 
-const Table = ({ children, classes = [], }) => {
+const Table = ({ tableData = {}, classes = [] }) => {
   const cls = ["a-table", ...classes];
   return (
-    <table className={cls.join(" ")}>
-      {children}
-    </table>
+    <div className="a-table__container">
+      <table className={cls.join(" ")}>
+        {tableData.columns &&
+          <thead className="a-table__thead">
+            <tr>
+              {tableData.columns.map(th => (<th className="a-table__th">{th}</th>))}
+            </tr>
+          </thead>
+        }
+        {tableData.data &&
+          <tbody className="a-table__tbody">
+            {tableData.data.map((tr, index) => (
+              <tr className="a-table__tbody-tr">
+                {tableData.rows && <th className="a-table__th">{tableData.rows[index]}</th>}
+                {tr.map(td => (<td className="a-table__td">{td}</td>))}
+              </tr>
+            ))}
+          </tbody>
+        }
+      </table>
+    </div>
   )
 }
 
