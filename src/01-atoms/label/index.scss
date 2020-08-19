@@ -1,0 +1,17 @@
+.a-label {
+  display: block;
+  padding: 0 em(10, 13);
+  color: $color-granite;
+  font-size: rem(13);
+  line-height: (16 / 13);
+
+  @include media-breakpoint-up(xlarge) {
+    font-size: rem(20);
+    line-height: (24 / 20);
+  }
+
+  @include media-breakpoint-up(xxlarge) {
+    font-size: rem(26);
+    line-height: (32 / 26);
+  }
+}
