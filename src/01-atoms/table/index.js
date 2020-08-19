@@ -8,16 +8,16 @@ const Table = ({ tableData = {}, classes = [] }) => {
         {tableData.columns &&
           <thead className="a-table__thead">
             <tr>
-              {tableData.columns.map(th => (<th className="a-table__th">{th}</th>))}
+              {tableData.columns.map(th => (<th key={encodeURIComponent(th)} className="a-table__th" scope="col">{th}</th>))}
             </tr>
           </thead>
         }
         {tableData.data &&
           <tbody className="a-table__tbody">
             {tableData.data.map((tr, index) => (
-              <tr className="a-table__tbody-tr">
-                {tableData.rows && <th className="a-table__th">{tableData.rows[index]}</th>}
-                {tr.map(td => (<td className="a-table__td">{td}</td>))}
+              <tr key={index} className="a-table__tbody-tr">
+                {tableData.rows && <th className="a-table__th" scope="row">{tableData.rows[index]}</th>}
+                {tr.map(td => (<td key={encodeURIComponent(td)} className="a-table__td">{td}</td>))}
               </tr>
             ))}
           </tbody>

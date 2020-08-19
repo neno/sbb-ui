@@ -29,5 +29,5 @@ export const AlignRight = () =>
 
 export const HeadersSide = () =>
   renderToStaticMarkup(
-    <Table tableData={sideHeaderTableData} />
+    <Table tableData={sideHeaderTableData}  classes={["u-text-left"]} />
   )

@@ -12,7 +12,7 @@
   &__thead {
     background-color: $color-cloud;
 
-    > .a-table__th {
+    .a-table__th {
       &:first-child {
         border-left: $color-cloud solid 1.0667em;
       }
@@ -22,9 +22,6 @@
       }
     }
   }
-
-  // &__th {
-  // }
 
   &__tbody {
     .a-table__td,
@@ -47,7 +44,8 @@
 
   &__td,
   &__th {
-    padding: 1.2em 0.8em 1.2667em;
+    line-height: em(22, 15);
+    padding: em(19, 15) 0.8em;
   }
 
   @include media-breakpoint-up(medium) {
@@ -61,16 +59,18 @@
   @include media-breakpoint-up(xlarge) {
     &__td,
     &__th {
-      line-height: 1.5217;
-      padding-bottom: 1.1739em;
+      padding-top: em(28, 23);
+      padding-bottom: em(28, 23);
+      line-height: em(34, 23);
     }
   }
 
   @include media-breakpoint-up(xxlarge) {
     &__td,
     &__th {
-      line-height: 1.4667;
-      padding-bottom: 1.2667em;
+      padding-top: em(37, 30);
+      padding-bottom: em(37, 30);
+      line-height: em(44, 30);
     }
   }
 }
