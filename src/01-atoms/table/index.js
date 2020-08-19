@@ -15,8 +15,8 @@ const Table = ({ tableData = {}, classes = [] }) => {
         {tableData.data &&
           <tbody className="a-table__tbody">
             {tableData.data.map((tr, index) => (
-              <tr key={index} className="a-table__tbody-tr">
-                {tableData.rows && <th className="a-table__th" scope="row">{tableData.rows[index]}</th>}
+              <tr key={index} className="a-table__tr">
+                {tableData.rows && <th className="a-table__td" scope="row">{tableData.rows[index]}</th>}
                 {tr.map(td => (<td key={encodeURIComponent(td)} className="a-table__td">{td}</td>))}
               </tr>
             ))}

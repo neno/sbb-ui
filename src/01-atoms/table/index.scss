@@ -11,32 +11,30 @@
 
   &__thead {
     background-color: $color-cloud;
+  }
 
-    .a-table__th {
-      &:first-child {
-        border-left: $color-cloud solid 1.0667em;
-      }
+  .a-table__th {
+    &:first-child {
+      border-left: $color-cloud solid 1.0667em;
+    }
 
-      &:last-child {
-        border-right: $color-cloud solid 1.0667em;
-      }
+    &:last-child {
+      border-right: $color-cloud solid 1.0667em;
     }
   }
 
-  &__tbody {
-    .a-table__td,
-    .a-table__th {
-      &:first-child {
-        border-left: $color-white solid 1.0667em;
-      }
+  .a-table__td {
+    font-weight: 400;
+    &:first-child {
+      border-left: $color-white solid 1.0667em;
+    }
 
-      &:last-child {
-        border-right: $color-white solid 1.0667em;
-      }
+    &:last-child {
+      border-right: $color-white solid 1.0667em;
     }
   }
 
-  &__tbody-tr {
+  &__tr {
     &:nth-child(even) {
       background-color: $color-milk;
     }
