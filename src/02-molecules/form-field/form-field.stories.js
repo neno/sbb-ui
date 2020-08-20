@@ -4,6 +4,7 @@ import FormField from "./index"
 
 import Label from '../../01-atoms/label'
 import Input from '../../01-atoms/input'
+import Error from '../../01-atoms/error'
 
 export default {
   title: "02-Molecules/Form Field"
@@ -20,5 +21,23 @@ export const Default = () =>
           "id": "field_name",
           "name": "field_name"
         }} />
+    </FormField>
+  )
+
+export const HasError = () =>
+  renderToStaticMarkup(
+    <FormField>
+      <Label htmlFor="field_name">
+        Label Text
+      </Label>
+      <Input
+        classes={['a-input--error']}
+        attr={{
+          "id": "field_name",
+          "name": "field_name"
+        }} />
+      <Error>
+        Pflichtfeld, bitte ausfüllen.
+      </Error>
     </FormField>
   )
