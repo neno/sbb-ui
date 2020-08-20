@@ -10,7 +10,11 @@ export default {
 export const ButtonPrimary = () =>
   renderToStaticMarkup(
     <Button classes={["a-btn--primary"]}>
-      <span>Primary Button</span>
+      <span className="a-btn__animation">
+        <Icon name="arrow-right" />
+        Primary Button
+        <Icon name="arrow-right" />
+      </span>
     </Button>
   )
 
