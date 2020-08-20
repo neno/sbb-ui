@@ -1,7 +1,7 @@
 import React from "react"
 import { renderToStaticMarkup } from "react-dom/server"
 import Table from "../index"
-import { tableData, sideHeaderTableData } from "./table.data"
+import { tableData, sideHeaderTableData, twoHeadersTableData } from "./table.data"
 
 export default {
   title: "01-Atoms/Table"
@@ -29,5 +29,10 @@ export const AlignRight = () =>
 
 export const HeadersSide = () =>
   renderToStaticMarkup(
-    <Table tableData={sideHeaderTableData}  classes={["u-text-left"]} />
+    <Table tableData={sideHeaderTableData} classes={["u-text-left"]} />
+  )
+
+  export const TwoHeaders = () =>
+  renderToStaticMarkup(
+    <Table tableData={twoHeadersTableData} classes={["u-text-center"]} />
   )

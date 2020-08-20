@@ -57,7 +57,7 @@
 %font-regular {
   font-weight: 400;
   font-size: $font-size-regular;
-  line-height: 1.7;
+  line-height: (26 / 15);
 
   @include media-breakpoint-up(xlarge) {
     font-size: $font-size-regular-xlarge;
@@ -67,15 +67,6 @@
     font-size: $font-size-regular-xxlarge;
   }
 }
-
-// %font-small {
-//   @extend %font-regular;
-
-//   @include media-breakpoint-up(large) {
-//     font-size: $font-size-regular;
-//     line-height: 1.25;
-//   }
-// }
 
 %block-margin {
   margin: 0 0 rem(20) 0;

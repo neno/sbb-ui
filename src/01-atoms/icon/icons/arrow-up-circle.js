@@ -11,6 +11,4 @@ const ArrowUpCircle = () => (
   </svg>
 )
 
-
-
 export default ArrowUpCircle

@@ -59,7 +59,7 @@
     &__th {
       padding-top: em(28, 23);
       padding-bottom: em(28, 23);
-      line-height: em(34, 23);
+      line-height: (34 / 23);
     }
   }
 
@@ -68,7 +68,7 @@
     &__th {
       padding-top: em(37, 30);
       padding-bottom: em(37, 30);
-      line-height: em(44, 30);
+      line-height: (44 / 30);
     }
   }
 }
