@@ -7,21 +7,26 @@ export default {
   title: "01-Atoms/Buttons"
 }
 
-export const ButtonPrimary = () =>
+export const Default = () =>
   renderToStaticMarkup(
-    <Button classes={["a-btn--primary"]}>
-      <span className="a-btn__animation">
-        <Icon name="arrow-right" />
-        Primary Button
-        <Icon name="arrow-right" />
-      </span>
+    <Button>
+      Default Button
     </Button>
   )
 
-export const ButtonSecondary = () =>
+export const ButtonPrimary = () =>
   renderToStaticMarkup(
-    <Button classes={["a-btn--secondary"]}>
-      <span>Secondary Button</span>
+    <Button classes={["a-btn--primary"]}>
+      Label
+    </Button>
+  )
+
+export const ButtonWithArrows = () =>
+  renderToStaticMarkup(
+    <Button classes={["a-btn--primary a-btn--arrows"]}>
+      <Icon name="arrow-right" />
+      Label
+      <Icon name="arrow-right" />
     </Button>
   )
 
@@ -29,7 +34,7 @@ export const ButtonPrimaryIcon = () =>
   renderToStaticMarkup(
     <Button classes={["a-btn--primary a-btn--search"]}>
       <span className="sr-only">
-        Hidden text
+        Label
       </span>
       <Icon name="magnifying-glass" />
     </Button>

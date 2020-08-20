@@ -1,5 +1,7 @@
 import React from "react"
 
+import Icon from "../icon"
+
 const Button = ({ children, handleClick, classes = [], attr = {} }) => {
   const cls = ["a-btn", ...classes]
   return (

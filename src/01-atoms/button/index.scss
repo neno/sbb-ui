@@ -1,33 +1,22 @@
-$button-border-width: rem(1);
-$button-border-radius: rem(2);
 $button-min-width: rem(60);
-$button-border-width-xlarge: rem(2);
-$button-border-radius-xlarge: rem(3);
-$button-border-radius-xxlarge: rem(4);
+$button-padding-x: em(40, 15);
+$button-arrow-padding-x: em(66, 15);
+$button-arrow-position-x: em(10, 15);
+$button-arrow-hover-position-x: em(36, 15);
 
 .a-btn {
   @extend %font-regular;
   display: flex;
   align-items: center;
   background-color: $color-silver;
-  border: $button-border-width solid $color-silver;
-  border-radius: $button-border-radius;
+  border: em(1, 15) solid $color-silver;
+  border-radius: em(2, 15);
   color: $color-iron;
   cursor: pointer;
   min-width: $button-min-width;
   overflow: hidden;
-  padding: em(10, 15) em(40, 15);
+  padding: em(10, 15) $button-padding-x;
   will-change: background-color, border-color;
-
-  @include media-breakpoint-up(xlarge) {
-    border-width: $button-border-width-xlarge;
-    border-radius: $button-border-radius-xlarge;
-    font-size: $font-size-regular-xlarge;
-  }
-
-  @include media-breakpoint-up(xxlarge) {
-    border-radius: $button-border-radius-xxlarge;
-  }
 
   &--primary {
     background-color: $color-red;
@@ -44,27 +33,30 @@ $button-border-radius-xxlarge: rem(4);
     height: 100%;
     padding: 0;
   }
-}
 
-.a-btn__animation {
-  position: relative;
-  padding-left: rem(30);
-  will-change: padding-left, padding-right;
-  transition: padding-left 0.4s ease, padding-right 0.4s ease;
+  &--arrows {
+    position: relative;
+    padding-right: $button-arrow-padding-x;
+    will-change: background-color, border-color, padding-left, padding-right;
+    transition: background-color 0.4s ease, border-color 0.4s ease,
+      padding-left 0.4s ease, padding-right 0.4s ease;
 
-  > .a-icon {
-    position: absolute;
-    top: 50%;
-    right: rem(-30);
-    opacity: 0;
-    will-change: left, right;
-    transition: left 0.4s ease, right 0.4s ease, opacity 0.4s ease;
-    transform: translateY(rem(-12));
-
-    &:first-child {
-      left: 0;
-      right: auto !important;
+    > .a-icon {
+      position: absolute;
+      top: 50%;
+      right: $button-arrow-hover-position-x;
       opacity: 1;
+      will-change: right;
+      transition: right 0.4s ease, opacity 0.4s ease;
+      transform: translateY(-50%);
+
+      &:first-child {
+        left: $button-arrow-position-x;
+        right: auto !important;
+        opacity: 0;
+        will-change: left;
+        transition: left 0.4s ease, opacity 0.4s ease;
+      }
     }
   }
 }
@@ -77,19 +69,18 @@ $button-border-radius-xxlarge: rem(4);
     }
   }
 
-  @include hover {
-    .a-btn__animation {
-      padding-left: 0;
-      padding-right: rem(30);
+  &--arrows {
+    @include hover {
+      padding-left: $button-arrow-padding-x;
+      padding-right: $button-padding-x;
 
       > .a-icon {
-        position: absolute;
-        right: 0;
-        opacity: 1;
+        right: $button-arrow-position-x;
+        opacity: 0;
 
         &:first-child {
-          left: rem(-30);
-          opacity: 0;
+          left: $button-arrow-hover-position-x;
+          opacity: 1;
         }
       }
     }
