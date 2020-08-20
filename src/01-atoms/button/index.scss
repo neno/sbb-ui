@@ -23,6 +23,11 @@ $button-arrow-hover-position-x: em(36, 15);
     border-color: $color-red;
     color: $color-white;
     will-change: background-color, border-color;
+
+    @include hover {
+      background-color: $color-red-125;
+      border-color: $color-red-125;
+    }
   }
 
   &--search {
@@ -58,18 +63,7 @@ $button-arrow-hover-position-x: em(36, 15);
         transition: left 0.4s ease, opacity 0.4s ease;
       }
     }
-  }
-}
 
-.a-btn {
-  &--primary {
-    @include hover {
-      background-color: $color-red-125;
-      border-color: $color-red-125;
-    }
-  }
-
-  &--arrows {
     @include hover {
       padding-left: $button-arrow-padding-x;
       padding-right: $button-padding-x;
