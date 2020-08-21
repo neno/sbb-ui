@@ -1,0 +1,58 @@
+.a-tab {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: em(20, 15);
+  font-weight: 300;
+  padding: 0 0 em(9, 20);
+  font-weight: 300;
+  line-height: 1;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: em(1, 20);
+    background: currentColor;
+    transform: translateX(-50%);
+    will-change: width;
+    transition: width 0.3s ease;
+  }
+
+  + .a-tab {
+    margin-left: em(18, 20);
+  }
+
+  @include media-breakpoint-up(mobile) {
+    font-size: em(26, 15);
+    padding-bottom: em(21, 26);
+
+    &:after {
+      height: em(1, 26);
+    }
+
+    + .a-tab {
+      margin-left: em(42, 26);
+    }
+  }
+
+  &:not(&--active) {
+    @include hover {
+      color: $color-red-125;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--active {
+    &:after {
+      width: 100%;
+    }
+  }
+}

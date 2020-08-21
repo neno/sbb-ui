@@ -23,10 +23,8 @@ export const ButtonPrimary = () =>
 
 export const ButtonWithArrows = () =>
   renderToStaticMarkup(
-    <Button classes={["a-btn--primary a-btn--arrows"]}>
-      <Icon name="arrow-right" />
+    <Button classes={["a-btn--primary a-btn--arrows"]} arrows="true">
       Label
-      <Icon name="arrow-right" />
     </Button>
   )
 

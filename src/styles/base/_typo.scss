@@ -24,6 +24,13 @@ ol {
   @extend %block-margin;
 }
 
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
 a {
   color: inherit;
   text-decoration: inherit;

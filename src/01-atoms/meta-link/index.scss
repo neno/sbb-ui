@@ -15,11 +15,11 @@
     margin-right: em(4, 14);
   }
 
-  @include media-breakpoint-up(xlarge) {
+  @include media-breakpoint-up(wide) {
     font-size: rem(21);
   }
 
-  @include media-breakpoint-up(xxlarge) {
+  @include media-breakpoint-up(ultra) {
     font-size: rem(28);
   }
 }

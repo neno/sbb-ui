@@ -2,27 +2,22 @@
 %h2,
 %h3,
 %h3,
-%h4,
-%button {
-  font-family: $font-primary;
-  font-weight: 700;
+%h4 {
+  font-weight: 100;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: rem(20);
 }
 
-%h2,
-%h3,
-%h4,
-%button {
-  font-weight: 500;
-}
-
 %h1 {
   font-size: $font-size-h1;
 
-  @include media-breakpoint-up(large) {
-    font-size: $font-size-h1-large;
+  @include media-breakpoint-up(mobile) {
+    font-size: $font-size-h1-mobile;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: $font-size-h1-tablet;
   }
 }
 
@@ -59,11 +54,11 @@
   font-size: $font-size-regular;
   line-height: (26 / 15);
 
-  @include media-breakpoint-up(xlarge) {
+  @include media-breakpoint-up(wide) {
     font-size: $font-size-regular-xlarge;
   }
 
-  @include media-breakpoint-up(xxlarge) {
+  @include media-breakpoint-up(ultra) {
     font-size: $font-size-regular-xxlarge;
   }
 }

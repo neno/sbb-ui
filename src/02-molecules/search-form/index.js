@@ -18,7 +18,7 @@ const SearchForm = () => {
         }}
       />
       <div className="m-search-form__submit">
-        <Button classes={["a-btn--primary a-btn--icon a-btn--search"]}>
+        <Button classes={["a-btn--primary a-btn--icon a-btn--search"]} type="submit">
           <span className="sr-only">
             Suche
           </span>
