@@ -31,6 +31,7 @@ const OverviewTemplate = () => (
         </Button>
       </TabPanel>
       <TabPanel id="pensionierte">
+        <LoginForm />
       </TabPanel>
     </Tabs>
 
