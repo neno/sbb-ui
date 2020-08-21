@@ -8,3 +8,6 @@ export default {
 
 export const LoginForm = () =>
   renderToStaticMarkup(<Form />);
+
+  export const InvalidLoginForm= () =>
+  renderToStaticMarkup(<Form invalid="true" />);
