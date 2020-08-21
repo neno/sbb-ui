@@ -30,7 +30,7 @@ export const ButtonWithArrows = () =>
     </Button>
   )
 
-export const ButtonPrimaryIcon = () =>
+export const ButtonSearch = () =>
   renderToStaticMarkup(
     <Button classes={["a-btn--primary a-btn--search"]}>
       <span className="sr-only">

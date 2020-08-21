@@ -4,7 +4,7 @@ $offsetCurve: (
   small: rem(15),
   medium: rem(28),
   wide: 0,
-  ultra: 0
+  ultra: 0,
 );
 
 $maxWidthCurve: (
@@ -13,7 +13,7 @@ $maxWidthCurve: (
   small: calc(100% - 2 * #{map-get($offsetCurve, "small")}),
   medium: calc(100% - 2 * #{map-get($offsetCurve, "medium")}),
   wide: rem(1134),
-  ultra: rem(1248)
+  ultra: rem(1248),
 );
 
 @mixin constrainer {
@@ -50,7 +50,7 @@ $maxWidthCurve: (
 
 $maxWidthCurveFull: (
   zero: 100%,
-  ultra: rem(2500)
+  ultra: rem(2500),
 );
 
 @mixin maxWidthCurveFull {
@@ -65,19 +65,6 @@ $maxWidthCurveFull: (
   }
 }
 
-.l-component {
-  padding-bottom: rem(60);
-
-  .l-component {
-    padding-bottom: 0;
-  }
-
-  > * .l-constrainer > * {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
-
 .l-constrainer {
   @include constrainer;
 
@@ -86,13 +73,21 @@ $maxWidthCurveFull: (
   }
 
   > {
-    h1,h2,h3,h4,p {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
       width: colWidth(3, 4);
     }
   }
 
   .l-constrainer {
-    h1,h2,h3,h4,p {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
       width: 100%;
     }
   }

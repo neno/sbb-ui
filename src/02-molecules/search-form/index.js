@@ -4,7 +4,7 @@ import Icon from '../../01-atoms/icon'
 import Input from '../../01-atoms/input'
 import Button from '../../01-atoms/button'
 
-const SearchForm = ({ pages = [], currentPage }) => {
+const SearchForm = () => {
   return (
     <form className='m-search-form'>
       <label className="sr-only" htmlFor="search-term">
