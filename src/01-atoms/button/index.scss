@@ -6,8 +6,9 @@ $button-arrow-hover-position-x: em(36, 15);
 
 .a-btn {
   @extend %font-regular;
-  display: flex;
+  display: inline-block;
   align-items: center;
+  width: 100%;
   background-color: $color-silver;
   border: em(1, 15) solid $color-silver;
   border-radius: em(2, 15);
@@ -17,6 +18,10 @@ $button-arrow-hover-position-x: em(36, 15);
   overflow: hidden;
   padding: em(10, 15) $button-padding-x;
   will-change: background-color, border-color;
+
+  @include media-breakpoint-up(small) {
+    width: auto;
+  }
 
   &--primary {
     background-color: $color-red;
@@ -49,18 +54,18 @@ $button-arrow-hover-position-x: em(36, 15);
     > .a-icon {
       position: absolute;
       top: 50%;
-      right: $button-arrow-hover-position-x;
-      opacity: 1;
-      will-change: right;
-      transition: right 0.4s ease, opacity 0.4s ease;
-      transform: translateY(-50%);
+      margin-top: em(12, 15) * -1;
+      will-change: opacity;
+      transition: opacity 0.4s ease;
+
+      &:last-child {
+        margin-left: em(6, 15);
+        opacity: 1;
+      }
 
       &:first-child {
-        left: $button-arrow-position-x;
-        right: auto !important;
+        margin-left: em(30, 15) * -1;
         opacity: 0;
-        will-change: left;
-        transition: left 0.4s ease, opacity 0.4s ease;
       }
     }
 
@@ -69,11 +74,9 @@ $button-arrow-hover-position-x: em(36, 15);
       padding-right: $button-padding-x;
 
       > .a-icon {
-        right: $button-arrow-position-x;
         opacity: 0;
 
         &:first-child {
-          left: $button-arrow-hover-position-x;
           opacity: 1;
         }
       }

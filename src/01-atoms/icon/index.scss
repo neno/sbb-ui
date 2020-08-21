@@ -1,6 +1,6 @@
 .a-icon {
-  width: rem(24);
-  height: rem(24);
+  width: em(24, 15);
+  height: em(24, 15);
 
   path,
   polyline {
@@ -17,15 +17,5 @@
 
   &--meta-link {
     margin-right: em(4, 14);
-  }
-
-  @include media-breakpoint-up(xlarge) {
-    width: rem(36);
-    height: rem(36);
-  }
-
-  @include media-breakpoint-up(xxlarge) {
-    width: rem(48);
-    height: rem(48);
   }
 }

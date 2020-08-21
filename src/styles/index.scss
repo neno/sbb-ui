@@ -17,7 +17,7 @@
 @import "./layout/layout";
 @import "./layout/grid";
 
-/// basic styles
+/// Basic styles
 @import "./base/typo";
 @import "./base/global";
 
@@ -35,3 +35,6 @@
 /// Molecules
 @import "../02-molecules/search-form/index.scss";
 @import "../02-molecules/form-field/index.scss";
+
+/// Organisms
+@import "../03-organisms/form/index.scss";
