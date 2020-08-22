@@ -8,14 +8,12 @@ export default {
 
 export const Default = () =>
   renderToStaticMarkup(
-    <Tab>
-      Label
-    </Tab>
+    <Tab label="Label" id="tab-1" />
   )
 
   export const Active = () =>
   renderToStaticMarkup(
-    <Tab active="true">
+    <Tab label="Label" id="tab-1" active="true">
       Label
     </Tab>
   )
