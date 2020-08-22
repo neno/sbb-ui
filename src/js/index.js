@@ -1,5 +1,6 @@
 import "../styles/index.scss"
 import Collapsible from "./libs/Collapsible"
+import Tabs from "./libs/Tabs"
 
 const timeout = process.env.STORYBOOK_TIMEOUT || 0
 
@@ -11,5 +12,9 @@ const timeout = process.env.STORYBOOK_TIMEOUT || 0
 setTimeout(() => {
   document.querySelectorAll("[data-module='collapsible']").forEach(el => {
     new Collapsible(el)
+  })
+
+  document.querySelectorAll("[data-module='tabs']").forEach(el => {
+    new Tabs(el)
   })
 }, timeout)

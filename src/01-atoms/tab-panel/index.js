@@ -1,7 +1,7 @@
 import React from "react"
 
 const TabPanel = ({ children, id, active }) => (
-  <div tabIndex={active ? '0' : '-1'}
+  <div tabIndex='0'
     role="tabpanel"
     id={`${id}-tab`}
     aria-labelledby={id}

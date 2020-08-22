@@ -9,4 +9,4 @@ export default {
 }
 
 export const Default = () =>
-  renderToStaticMarkup(<TabList tabs={tabs} />)
+  renderToStaticMarkup(<TabList tabs={tabs} label="Example of tab list" />)
