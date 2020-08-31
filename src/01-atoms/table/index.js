@@ -1,10 +1,11 @@
 import React from "react"
 
-const Table = ({ tableData = {}, classes = [] }) => {
+const Table = ({ tableData = {}, classes = [], tableClasses = [] }) => {
   const cls = ["a-table", ...classes];
+  const tblCls = ["a-table__table", ...tableClasses];
   return (
-    <div className="a-table__container">
-      <table className={cls.join(" ")}>
+    <div className={cls.join(" ")}>
+      <table className={tblCls.join(" ")}>
         {tableData.columns &&
           <thead className="a-table__thead">
             <tr>

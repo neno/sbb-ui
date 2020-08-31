@@ -1,13 +1,13 @@
-.a-table__container {
+.a-table {
   width: 100%;
   overflow: auto;
-}
 
-.a-table {
-  border: rem(1) solid $color-cloud;
-  border-spacing: 0;
-  background-color: $color-white;
-  padding-bottom: 1.0667em;
+  &__table {
+    border: rem(1) solid $color-cloud;
+    border-spacing: 0;
+    background-color: $color-white;
+    padding-bottom: 1.0667em;
+  }
 
   &__thead {
     background-color: $color-cloud;
