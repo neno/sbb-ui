@@ -3,8 +3,8 @@ export const tableData = {
     ['Jahr'],
     ['Anzahl Bahnhöfe*'], 
     ['Anteil Reisender'],
-    ['Extra Heading'],
-    ['Extra Heading']
+    ['Extra Heading 1'],
+    ['Extra Heading 2']
   ],
   data: [
     [ '2017', '335 BehiG-konform', '58 Prozent', '-', 'Lorem'],
@@ -18,8 +18,8 @@ export const sideHeaderTableData = {
     ['Jahr'],
     ['Anzahl Bahnhöfe*'], 
     ['Anteil Reisender'],
-    ['Extra Heading'],
-    ['Extra Heading']
+    ['Extra Heading 1'],
+    ['Extra Heading 2']
   ],
   data: [
     ['2017', '2023', 'Nach 202'],
@@ -35,8 +35,8 @@ export const twoHeadersTableData = {
     ['Jahr'],
     ['Anzahl Bahnhöfe*'], 
     ['Anteil Reisender'],
-    ['Extra Heading'],
-    ['Extra Heading']
+    ['Extra Heading 1'],
+    ['Extra Heading 2']
   ],
   rows: [
     ['2017'],
