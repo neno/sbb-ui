@@ -21,7 +21,7 @@ export const Default = () =>
   export const Error = () =>
   renderToStaticMarkup(
     <Notification classes={["a-notification--error"]}>
-      <Icon name="magnifying-glass" />
+      <Icon name="sign-exclamation-point" />
       <div className="a-notification__text">
         <strong>Notification Title</strong>
         <ul className="a-notification__error-list">

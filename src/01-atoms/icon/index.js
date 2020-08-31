@@ -5,6 +5,7 @@ import ArrowUpCircle from "./icons/arrow-up-circle"
 import ChevronDown from "./icons/chevron-down"
 import Globe from "./icons/globe"
 import MagnifyingGlass from "./icons/magnifying-glass"
+import SignExclamationPoint from "./icons/sign-exclamation-point"
 
 const icons = {
   "arrow-right": ArrowRight,
@@ -12,6 +13,7 @@ const icons = {
   "chevron-down": ChevronDown,
   "globe": Globe,
   "magnifying-glass": MagnifyingGlass,
+  "sign-exclamation-point": SignExclamationPoint
 }
 
 const Icon = ({ name }) => {

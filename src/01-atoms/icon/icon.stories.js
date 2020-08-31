@@ -6,6 +6,9 @@ export default {
   title: "01-Atoms/Icons"
 }
 
+export const ArrowRight = () =>
+renderToStaticMarkup(<Icon name="arrow-right" />)
+
 export const ArrowUpCircle = () =>
 renderToStaticMarkup(<Icon name="arrow-up-circle" />)
 
@@ -17,3 +20,6 @@ export const ChevronDown = () =>
 
 export const MagnifyingGlass = () =>
   renderToStaticMarkup(<Icon name="magnifying-glass" />)
+
+  export const SignExclamationPoint = () =>
+  renderToStaticMarkup(<Icon name="sign-exclamation-point" />)
