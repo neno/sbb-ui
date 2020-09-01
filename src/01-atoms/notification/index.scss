@@ -1,7 +1,7 @@
 .a-notification {
   display: flex;
   align-items: center;
-  line-height: 23 / 15;
+  line-height: (23 / 15);
   padding: em(22, 15) em(24, 15) em(22, 15) em(16, 15);
   color: $color-white;
   background-color: $color-granite;

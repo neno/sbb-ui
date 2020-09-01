@@ -6,6 +6,7 @@ const Input = ({classes = [], attr = {}}) => {
     <input 
       className={cls.join(" ")}
       type="text" 
+      required
       {...attr}
     />
   )

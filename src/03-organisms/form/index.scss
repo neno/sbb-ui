@@ -10,4 +10,8 @@
   &__footer {
     margin-top: em(48, 15);
   }
+
+  &__notification {
+    @extend .l-divider-big;
+  }
 }

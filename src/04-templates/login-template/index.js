@@ -26,12 +26,13 @@ const OverviewTemplate = () => (
     </div>
     <Tabs tabs={tabs}>
       <TabPanel id='mitarbeitende' active='true'>
-        <LoginForm />
-        <Button classes={['a-btn--primary']} arrows='true' url='/'>
+        <Button classes={["a-btn--primary a-btn--arrows"]} arrows='true' url='/'>
           Login
         </Button>
       </TabPanel>
-      <TabPanel id='pensionierte'></TabPanel>
+      <TabPanel id='pensionierte'>
+        <LoginForm />
+      </TabPanel>
     </Tabs>
 
     <div className='u-text-center'>

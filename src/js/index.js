@@ -1,6 +1,7 @@
 import "../styles/index.scss"
 import Collapsible from "./libs/Collapsible"
 import Tabs from "./libs/Tabs"
+import FormValidation from "./libs/FormValidation"
 
 const timeout = process.env.STORYBOOK_TIMEOUT || 0
 
@@ -16,5 +17,9 @@ setTimeout(() => {
 
   document.querySelectorAll("[data-module='tabs']").forEach(el => {
     new Tabs(el)
+  })
+
+  document.querySelectorAll("[data-module='form-validation']").forEach(el => {
+    new FormValidation(el)
   })
 }, timeout)

@@ -13,7 +13,7 @@ export const Default = () =>
     <Notification>
       <Icon name="magnifying-glass" />
       <div className="a-notification__text">
-        <p>Notification Text</p>
+        Notification Text
       </div>
     </Notification>
   )

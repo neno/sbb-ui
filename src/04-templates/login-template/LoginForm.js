@@ -34,7 +34,7 @@ const LoginForm = () => (
       </li>
     </ol>
     <div className='o-form__footer u-text-center'>
-      <Button classes={['a-btn--primary']} arrows='true' type='submit'>
+      <Button classes={["a-btn--primary a-btn--arrows"]} arrows="true" type='submit'>
         Login
       </Button>
     </div>

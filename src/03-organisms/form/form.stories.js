@@ -9,6 +9,7 @@ import Icon from '../../01-atoms/icon'
 import Input from '../../01-atoms/input'
 import Error from '../../01-atoms/error'
 import Button from '../../01-atoms/button'
+import Notification from '../../01-atoms/notification'
 
 export default {
   title: '03-Organisms/Form',
@@ -54,6 +55,18 @@ export const Default = () =>
 
 export const Invalid = () =>
   renderToStaticMarkup(<Form>
+    <div className="o-form__notification">
+      <Notification classes={["a-notification--error"]}>
+        <Icon name="sign-exclamation-point" />
+        <div className="a-notification__text">
+          <strong>Notification Title</strong>
+          <ul className="a-notification__error-list">
+            <li><a href="#firstname">First Name</a></li>
+            <li><a href="#lastname">Last Name</a></li>
+          </ul>
+        </div>
+      </Notification>
+    </div>
     <ol className='o-form__list'>
       <li className="o-form__list-item">
         <FormField>

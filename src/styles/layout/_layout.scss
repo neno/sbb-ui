@@ -96,3 +96,15 @@ $maxWidthCurveFull: (
 .l-constrainer-full {
   @include maxWidthCurveFull;
 }
+
+.l-divider-big {
+  margin-bottom: em(48, 15);
+
+  @include media-breakpoint-up(mobile) {
+    margin-bottom: em(72, 15);
+  }
+
+  @include media-breakpoint-up(tablet) {
+    margin-bottom: em(96, 15);
+  }
+}
